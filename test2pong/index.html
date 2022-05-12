@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" type="module"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="game" style="display: none">
+    <div class="score">
+    <div id="score1">0</div>
+    <div id="score2">0</div>
+  </div>
+  <div class="ball" id="ball"></div>
+  <div class="paddle left" id="paddle1"></div>
+  <div class="paddle right" id="paddle2"></div>
+  </div>
+
+  <div id="start-screen" class="screen" style="display:block">
+    <h1>Ping Pong</h1>
+    <button onclick='playerVsPlayer()'>Player vs Player</button>
+    <button onclick='playerVsCpu()'>Player vs CPU</button>
+    <button onclick='cpuVsCpu()'>CPU vs CPU</button>
+  </div>
+
+  <canvas id="cnv" style="display: none"></canvas>
+
+  <div id="gameover-screen" class="screen" style="display: none">
+    <h1>Game Over</h1>
+    <button onclick='playAgain()'>Play Again</button>
+    <button onclick='mainMenu()'>Main Menu</button>
+  </div>
+  
+</body>
+</html>
